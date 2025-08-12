@@ -48,13 +48,16 @@ function init() {
 function render() {
   updateBoard();
   updateMessage();
+  
 }
 
 function updateBoard() {
   board.forEach((cell, index) => {
     squareEls[index].textContent = cell;
   });
+  
 }
+init();
 
 function updateMessage() {
   if (winner === false && tie === false) {
